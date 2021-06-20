@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,8 +10,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/cover.css" />
-    <title>Bootstrap</title>
+    <title>ChrisPanda</title>
 
+
+    
     <style>
       body {
         background-image: url("images/IMG_5807.JPG");
@@ -19,63 +21,61 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
+  
     </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./images/lotus.png"
-            alt=""
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          ChrisPanda
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
+  </head> 
+    <body class="d-flex h-100 text-center text-white bg-dark">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+              <a href="#" class="navbar-brand">ChrisPanda</a>
+              <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse"
+              data-bs-target="#toggleMobileMenu"
+              aria-controls="toggleMobileMenu"
+              aria-label = "Toggle navigation"
+              aria-expanded="false"
+              >
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto">
+                  <li>
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav> 
           </div>
-        </div>
-      </div>
-    </nav>
-
-    <div class="d-flex justify-content-center">
-      <h1>Cover your page.</h1>
-      <p class="lead">
-        Cover is a one-page template for building simple and beautiful home
-        pages. Download, edit the text, and add your own fullscreen background
-        photo to make it your own.
-      </p>
-      <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-      </p>
-    </div>
-
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        </header>
+  
+        <main class="px-3">
+          <h1>The future is in your hands</h1>
+          <p class="lead">
+            我之所以會展開魔神仔的研究是因為第一次聽到魔神仔的故事的時候，覺得真是不可思議，研究民俗與信仰那麼久，居然不知道有魔神仔這個東西，不過當下聽的感覺卻是，這應該是台灣會普遍流傳的故事。
+          </p>
+          <p class="lead">
+            <a
+              href="#"
+              class="btn btn-lg btn-secondary fw-bold border-white bg-white"
+              >Learn more</a
+            >
+          </p>
+        </main>
+  
+        <footer class="mt-auto text-white-50">
+          <p>
+            ChrisPanda™
+          </p>
+        </footer>
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
