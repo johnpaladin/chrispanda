@@ -41,14 +41,22 @@
               </button>
               <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto">
-                  <li>
+                  <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Portfolio</a>
                   </li>
-                  <li>
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
+                  </li>  
+                  <li class="nav-item dropdown collapse">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -57,16 +65,32 @@
         </header>
   
         <main class="px-3">
-          <h1>The future is in your hands</h1>
+          <h1>Hi! 我是Chris Lin</h1>
           <p class="lead">
-            我之所以會展開魔神仔的研究是因為第一次聽到魔神仔的故事的時候，覺得真是不可思議，研究民俗與信仰那麼久，居然不知道有魔神仔這個東西，不過當下聽的感覺卻是，這應該是台灣會普遍流傳的故事。
+            一位對於神秘未知事物著迷的工程師，有什麼想跟我分享的嗎?
           </p>
           <p class="lead">
             <a
               href="#"
-              class="btn btn-lg btn-secondary fw-bold border-white bg-white"
-              >Learn more</a
-            >
+              class="btn btn-lg btn-secondary fw-bold border-white bg-white"  data-bs-toggle="modal" data-bs-target="#exampleModal"
+              >Learn more</a>  
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-info" id="exampleModalLabel">問題</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-info bg-dark">
+                    你覺得有幽浮嗎?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-primary">是</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </p>
         </main>
   
